@@ -1,0 +1,44 @@
+{
+  "pathwayTitle": "An Intro to Containers for Go Programmers",
+  "title": "Skaffold",
+  "description": "In this section you'll learn about Skaffold",
+  "difficulty": "intermediate",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Write a simple Go application",
+      "text": "step1.md"
+    },
+    {
+      "title": "Skaffold configuration",
+      "text": "step2.md"
+    },
+    {
+      "title": "Run your app under Skaffold",
+      "text": "step3.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "skaffold.sh",
+      "credits": "https://skaffold.dev/"
+    },
+    "finish": {
+      "text": "finish.md",
+      "credits": "https://skaffold.dev/"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uisettings": "go",
+    "uimessage1": "\u001b[36mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  },
+  "files": [
+    "hello.go",
+    "Dockerfile",
+    "skaffold.yaml",
+    "k8s-pod.yaml"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "pathwayTitle": "An Intro to Containers for Go Programmers",
+  "title": "Write a container from scratch",
+  "description": "In this section we'll look at what a container is, and what a container image is",
+  "difficulty": "intermediate",
+  "time": "30-45 minutes",
+  "details": {
+    "steps": [{
+      "title": "Execute an arbitrary command",
+      "text": "step1.md"
+    },
+    {
+      "title": "Isolate the hostname",
+      "text": "step2.md"
+    },
+    {
+      "title": "Isolate the hostname",
+      "text": "step21.md"
+    },
+    {
+      "title": "Give the container its own root",
+      "text": "step25.md"
+    },
+    {
+      "title": "Give the container its own root",
+      "text": "step26.md"
+    },
+    {
+      "title": "Isolate the processes",
+      "text": "step3.md"
+    },
+    {
+      "title": "Isolate the processes",
+      "text": "step35.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": "https://github.com/lizrice/containers-from-scratch"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "terminals": [{"name": "Terminal 2", "target": "host01"}],
+    "uisettings": "go",
+    "uimessage1": "\u001b[36mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "files": [
+    "main.go"
+  ]
+}
