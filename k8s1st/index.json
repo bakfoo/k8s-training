@@ -2,7 +2,7 @@
   "title": "k8s1st",
   "description": "k8s1st",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
@@ -22,5 +22,12 @@
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
-  }
+  },
+  "files": [
+    "hello.go",
+    "Dockerfile",
+    "pod.yaml",
+    "deployment.yaml",
+    "service.yaml"
+  ]
 }
