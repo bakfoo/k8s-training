@@ -1,0 +1,37 @@
+{
+  "pathwayTitle": "Step7",
+  "title": "Step7",
+  "description": "",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "マニフェストとポット",
+      "text": "step1.md"
+    }],
+    "assets": {
+      "host01": [
+          {"file": "message", "target": "/root"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+      "courseData": "makeDir.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uisettings": "python",
+    "uimessage1": "\u001b[36mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "Kubernetes"
+  },
+  "files": [
+   "nginx-pod.yml"
+  ]
+}

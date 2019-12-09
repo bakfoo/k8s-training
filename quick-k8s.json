@@ -4,10 +4,17 @@
     "courses": [
         {
             "pathway_id": "yutakashino",
-            "id": "images",
-            "course_id": "images",
-            "title": "1-1: docker基礎",
-            "description": "docker基礎"
+            "id": "Step3",
+            "course_id": "Step3",
+            "title": "Step3",
+            "description": "Step3"
+        },
+        {
+            "pathway_id": "yutakashino",
+            "id": "Step7",
+            "course_id": "Step7",
+            "title": "Step7",
+            "description": "Step7"
         }
     ]
 }
