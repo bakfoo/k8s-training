@@ -6,28 +6,8 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Write a simple web server",
+      "title": "コンテナ開発",
       "text": "step1.md"
-    },
-    {
-      "title": "Put your app into a container image",
-      "text": "step2.md"
-    },
-    {
-      "title": "Run your container image",
-      "text": "step3.md"
-    },
-    {
-      "title": "Get logs from a container",
-      "text": "step35.md"
-    },
-    {
-      "title": "Mounting a directory from the host",
-      "text": "step4.md"
-    },
-    {
-      "title": "Passing environment variables into a container",
-      "text": "step5.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -47,8 +27,6 @@
     "imageid": "ubuntu"
   },
   "files": [
-    "hello.go",
-    "text/response",
-    "Dockerfile"
+   "Dockerfile"
   ]
 }
