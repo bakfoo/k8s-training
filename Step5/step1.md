@@ -17,7 +17,15 @@
 
 ### 実行例5 コンテナの終了と再開 
 
+#### スタート
+
 `docker run --name myd my_daemon:0.1`{{execute}}
+
+#### （別のターミナルを開いて）ストップ
+
+`docker stop myd`{{execute}}
+
+#### 再開
 
 `docker start -i myd`{{execute}}
 
