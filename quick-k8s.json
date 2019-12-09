@@ -1,0 +1,13 @@
+{
+    "title": "QUICK K8s training",
+    "description": "Supported by BakFoo, Inc.",
+    "courses": [
+        {
+            "pathway_id": "yutakashino",
+            "id": "images",
+            "course_id": "images",
+            "title": "1-1: docker基礎",
+            "description": "docker基礎"
+        }
+    ]
+}
