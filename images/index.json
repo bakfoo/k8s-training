@@ -1,7 +1,7 @@
 {
-  "pathwayTitle": "An Intro to Containers for Go Programmers",
-  "title": "What's inside a container image?",
-  "description": "In this section we'll look at the filesystem inside a container, and see how we can pass environment variables in, and get logs out",
+  "pathwayTitle": "Step3",
+  "title": "Step3",
+  "description": "",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
@@ -9,6 +9,11 @@
       "title": "コンテナ開発",
       "text": "step1.md"
     }],
+    "assets": {
+      "host01": [
+          {"file": "message", "target": "/root"}
+      ]
+    },
     "intro": {
       "text": "intro.md",
       "credits": "",
@@ -20,7 +25,7 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
-    "uisettings": "go",
+    "uisettings": "python",
     "uimessage1": "\u001b[36mYour Interactive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {
