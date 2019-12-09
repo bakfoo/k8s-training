@@ -11,6 +11,13 @@
         },
         {
             "pathway_id": "yutakashino",
+            "id": "Step5",
+            "course_id": "Step5",
+            "title": "Step5",
+            "description": "Step5"
+        },
+        {
+            "pathway_id": "yutakashino",
             "id": "Step7",
             "course_id": "Step7",
             "title": "Step7",
