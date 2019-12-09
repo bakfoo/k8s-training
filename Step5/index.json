@@ -35,13 +35,5 @@
   },
   "backend": {
     "imageid": "ubuntu"
-  },
-  "files": [
-   "Dockerfile",
-   "Dockerfile2",
-   "Dockerfile3",
-   "my_daemon",
-   "my_daemon2",
-   "my_daemon3"
-  ]
+  }
 }
