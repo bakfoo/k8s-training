@@ -1,0 +1,47 @@
+{
+  "pathwayTitle": "Step5",
+  "title": "Step5",
+  "description": "",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "コンテナAPI",
+      "text": "step1.md"
+    }],
+    "assets": {
+      "host01": [
+          {"file": "Dockerfile", "target": "/root"},
+          {"file": "Dockerfile2", "target": "/root"},
+          {"file": "Dockerfile3", "target": "/root"},
+          {"file": "my_daemon", "target": "/root", "chmod": "+x"},
+          {"file": "my_daemon2", "target": "/root", "chmod": "+x"},
+          {"file": "my_daemon3", "target": "/root", "chmod": "+x"}
+      ]
+    },
+    "intro": {
+      "text": "intro.md",
+      "credits": "",
+      "courseData": "makeDir.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uisettings": "python",
+    "uimessage1": "\u001b[36mYour Interactive Bash Terminal.\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "files": [
+   "Dockerfile",
+   "Dockerfile2",
+   "Dockerfile3",
+   "my_daemon",
+   "my_daemon2",
+   "my_daemon3"
+  ]
+}
