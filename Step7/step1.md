@@ -30,4 +30,4 @@ spec:
 
 ### 実行例6 Nginxサーバーとアクセステスト用ポッドのリスト表示例
 
-`kubectl get po -o wide`{{exceute}}
+`kubectl get po -o wide`{{execute}}
