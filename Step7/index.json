@@ -32,6 +32,6 @@
     "imageid": "Kubernetes"
   },
   "files": [
-   "nginx-pod.yml"
+    "nginx-pod.yml"
   ]
 }
