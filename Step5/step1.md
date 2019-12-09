@@ -1,15 +1,36 @@
 
-## 03.2 ビルドの実行手順 
+## 05.2 環境変数のAPI実装例 
 
-Dcokerfileの用意
+### 実行例2 コンテナAPIとして環境変数の実装テスト
 
-<pre class="file" data-filename="Dockerfile" data-target="replace">
-FROM  alpine:latest
-RUN   apk update && apk add figlet
-ADD   ./message /message
-CMD   cat /message | figlet
-</pre>
+`LANG=C ./my_daemon`{{execute}}
 
-コンテナのビルド
+`LANG=C;INTERVAL=10 ./my_daemon`{{execute}}
 
-`docker build --tag hello:1.0 .`{{execute}}
+### 実行例3 コンテナをビルドする様子
+
+`docker build --tag my_daemon:0.1 .`{{execute}}
+
+### 実行例4 ビルドしたコンテナのリスト
+
+`docker images`{{execute}}
+
+### 実行例5 コンテナの終了と再開 
+
+`docker run --name myd my_daemon:0.1`{{execute}}
+
+`docker start -i myd`{{execute}}
+
+### 実行例6 シェル改良後のコンテナの再ビルド 
+
+`docker build --tag my_daemon:0.2 -f Dockerfile2`{{execute}}
+
+### 実行例7 改良型コンテナイメージと前バージョン 
+
+`docker images`{{execute}}
+
+`docker start -i myd`{{execute}}
+
+### 実行例8 改良型コンテナのテストの様子 
+
+`docker run --name myd my_daemon:0.2`{{execute}}
