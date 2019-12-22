@@ -1,8 +1,6 @@
-As before we need to make our slaves accessible to incoming requests. This is done by starting a service which knows how to communicate with _redis-slave_.
+redisスレイブをネットワーク的に繋ぐために，サービスを設定します．サービス名は _redis-slave_としました．　
 
-Because we have two replicated pods the service will also provide load balancing between the two nodes.
-
-#### Start Redis Slave Service
+#### Redisスレイブサービスを立ち上げる
 
 `kubectl create -f redis-slave-service.yaml`{{execute}}
 

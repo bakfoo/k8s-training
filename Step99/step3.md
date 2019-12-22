@@ -6,7 +6,7 @@ redisマスタの構成の2つ目，service，つまり，redisマスタのネ�
 
 `kubectl create -f redis-master-service.yaml`{{execute}}
 
-#### List &amp; Describe Services
+#### サービスの列挙と詳細の表示
 
 `kubectl get services`{{execute}}
 

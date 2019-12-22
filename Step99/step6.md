@@ -4,7 +4,7 @@ With the data services started we can now deploy the web application. The patter
 
 The YAML defines a service called frontend that uses the image _gcr.io/google_samples/gb-frontend:v3_. The replication controller will ensure that three pods will always exist.
 
-`kubectl create -f frontend-controller.yaml`{{execute}}
+`kubectl create -f frontend-deployment.yaml`{{execute}}
 
 #### List controllers and pods
 
