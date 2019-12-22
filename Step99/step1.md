@@ -1,17 +1,18 @@
-To start we need a running Kubernetes cluster. The details of this are explained in the [Launch Kubernetes cluster](https://www.katacoda.com/courses/kubernetes/launch-cluster) scenario.
+まず，kubernetesのクラスタを起動します．
 
-#### Task
+#### 最初の一歩 
 
-Start a single-node cluster using the helper script. The helper script will launch the API, Master, a Proxy and DNS discovery. The Web App uses DNS Discovery to find the Redis slave to store data.
+シングルノードのクラスタを以下のスクリプトを実行して立ち上げます．スクリプトによって，kubernetesのMaster, Proxy, クラスタDNSが立ち上がります．クラスタDNSはredisのマスター・スレイブ構成をするときに必要です． 
 
 `launch.sh`{{execute}}
 
-#### Health Check
+#### ヘルスチェック 
 
-Check everything is up using the following health Check:
+以下のコマンドでクラスタが立ち上がったか調べます．
+
 `
 kubectl cluster-info
 kubectl get nodes
 `{{execute}}
 
-If the node returns NotReady then it is still waiting. Wait a couple of seconds before retrying.
+NotReady の場合はしばらく立ち上がるまで待って下さい．

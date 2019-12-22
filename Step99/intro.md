@@ -1,8 +1,6 @@
-This scenario explains how to launch a simple, multi-tier web application using Kubernetes and Docker. The Guestbook example application stores notes from guests in Redis via JavaScript API calls. Redis contains a master (for storage), and a replicated set of redis 'slaves'.
+このシナリオでは，PHPによるWebアプリとしてゲストブックを作ります．バックエンドのデータベースにredisクラスタ（マスタースレーブ）を利用します．
 
-#### Core Concepts
-
-The following core concepts will be covered during this scenario. These are the foundations of understanding Kubernetes.
+#### 学習する言葉 
 
 * Pods
 

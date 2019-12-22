@@ -1,12 +1,8 @@
-The second part is a service. A Kubernetes service is a named load balancer that proxies traffic to one or more containers. The proxy works even if the containers are on different nodes.
+redisマスタの構成の2つ目，service，つまり，redisマスタのネットの構成をロードバランサーとしてデプロイします．
 
-Services proxy communicate within the cluster and rarely expose ports to an outside interface.
+#### Serviceを作る
 
-When you launch a service it looks like you cannot connect using curl or netcat unless you start it as part of Kubernetes. The recommended approach is to have a LoadBalancer service to handle external communications.
-
-#### Create Service
-
-The YAML defines the name of the replication controller, _redis-master_, and the ports which should be proxied.
+リプリケーションコントローラー名: _redis-master_
 
 `kubectl create -f redis-master-service.yaml`{{execute}}
 
