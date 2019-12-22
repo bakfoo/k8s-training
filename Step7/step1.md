@@ -1,6 +1,10 @@
 
 ## 07.3 ポッドの動作検証 
 
+### クラスタが起動したかどうか
+
+`kubectl get node`{{execute}}
+
 ### マニフェストの用意
 
 <pre class="file" data-filename="nginx-pod.yml" data-target="replace">

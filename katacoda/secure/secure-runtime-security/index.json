@@ -1,0 +1,53 @@
+{
+    "pathwayTitle": "Sysdig Secure",
+    "title": "Runtime security",
+    "description": "We will use Sysdig Secure to detect abnormal behaviour in our containers.",
+    "difficulty": "medium",
+    "icon": "fa-kubernetes",
+    "time": "30 minutes",
+    "details": {
+        "assets": {
+            "host01": [{ "file": "*.sh", "target": "~/", "chmod": "+x" }, { "file": "*.yaml", "target": "~/" }]
+        },
+        "intro": {
+            "text": "intro.md",
+            "code": "foreground.sh",
+            "courseData": "courseBase.sh",
+            "credits": ""
+        },
+        "steps": [
+            {
+                "title": "Setting up the environment",
+                "text": "step1.md"
+            },
+            {
+                "title": "Installing the Sysdig agent",
+                "text": "step2.md"
+            },
+            {
+                "title": "Policies",
+                "text": "step3.md"
+            },
+            {
+                "title": "Container running interactive shell",
+                "text": "step4.md"
+            },
+            {
+                "title": "Investigate the incident",
+                "text": "step5.md"
+            }
+        ],
+        "finish": {
+            "text": "finish.md"
+        }
+    },
+    "environment": {
+        "showdashboard": true,
+        "dashboards": [{ "name": "Sysdig Secure", "href": "https://secure.sysdig.com" }],
+        "uilayout": "terminal-iframe",
+        "uimessage1": "\u001b[32mYou are logged into the master node of your Kubernetes cluster.\u001b[m\r\n"
+    },
+    "backend": {
+        "imageid": "kubernetes-cluster-running"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "title": "Sysdig Secure",
+    "private": true,
+    "description": "Learn the basics of Sysdig Secure",
+    "courses": [
+        {
+            "course_id": "secure-runtime-security",
+            "title": "Runtime security",
+            "description": "Use Sysdig Secure to detect suspicious behaviour in containers"
+        },
+        {
+            "course_id": "secure-policy-editor",
+            "title": "Sysdig Secure Policy Editor and Library",
+            "description": "Create custom policies and rules"
+        },
+        {
+            "course_id": "secure-psp-introduction",
+            "title": "Introduction to PSPs",
+            "description": "Introduction to Pod Security Policies (PSPs)",
+            "private": true
+        },
+        {
+            "course_id": "secure-pod-policy-advisor",
+            "title": "Sysdig Secure Pod Policy Advisor",
+            "description": "How to successfully use Kubernetes Pod Policy Advisor and not die trying",
+            "private": true
+        },
+        {
+            "course_id": "secure-forensics-activity-audits",
+            "title": "Activity Audit Forensics",
+            "description": "Track and monitor systema nd user level activity in your Kubernetes environment",
+            "private": true
+        },
+        {
+            "course_id": "secure-image-scanning-and-ci-cd",
+            "title": "Image Scanning and CI/CD Pipeline",
+            "description": "We will deploy Jenkins, set up the Sysdig Secure plugin integration, and execute some image build and scan in a pipeline."
+        }
+    ]
+}

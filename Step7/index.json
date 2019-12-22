@@ -38,6 +38,7 @@
     "imageid": "kubernetes"
   },
   "files": [
+    "nginx-pod.yml",
     "webapl-pod.yml"
   ]
 }

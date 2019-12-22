@@ -33,7 +33,7 @@ spec:
 `kubectl get po`{{execute}}
 
 ### ヘルスチェック状態をlogで確認
-`kubectl logs webapl`{{execute}}
+`kubectl logs webapl -f`{{execute}}
 
 ### ポッドの詳細表示
 
@@ -41,6 +41,6 @@ spec:
 
 ### 実行例10 活性化プローブが繰り返し失敗したあとにコンテナを再スタートする
 
-`kubectl logs webapl`{{execute}}
+`kubectl logs webapl -f`{{execute}}
 
 `kubectl describe po webapl`{{execute}}
