@@ -29,6 +29,13 @@
             "course_id": "Step7",
             "title": "Step7",
             "description": "Step7"
+        },
+        {
+            "pathway_id": "yutakashino",
+            "id": "Step99",
+            "course_id": "Step99",
+            "title": "Step99",
+            "description": "Step99"
         }
     ]
 }

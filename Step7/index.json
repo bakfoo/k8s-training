@@ -5,10 +5,16 @@
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
-    "steps": [{
-      "title": "マニフェストとポット",
-      "text": "step1.md"
-    }],
+    "steps": [
+      {
+        "title": "マニフェストとポット",
+        "text": "step1.md"
+      },
+      {
+        "title": "ヘルスチェック機能",
+        "text": "step2.md"
+      }
+    ],
     "assets": {
       "host01": [
           {"file": "message", "target": "/root"}
@@ -32,6 +38,6 @@
     "imageid": "kubernetes"
   },
   "files": [
-    "nginx-pod.yml"
+    "webapl-pod.yml"
   ]
 }
