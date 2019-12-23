@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdir -p /root/tutorial && cd /root/tutorial && git clone git@gitlab.com:bakfooinc/k8sguestbook.git .
+mkdir -p /root/tutorial && cd /root/tutorial && git clone https://gitlab.com/bakfooinc/k8sguestbook.git .
 
 echo 'kubectl create -f redis-master-deployment.yaml' >> ~/start.sh
 echo 'kubectl create -f redis-master-service.yaml' >> ~/start.sh
