@@ -2,6 +2,8 @@ redisスレイブをネットワーク的に繋ぐために，サービスを設
 
 #### Redisスレイブサービスを立ち上げる
 
+- マニフェスト: _redis-slave-service.yaml_
+
 `kubectl create -f redis-slave-service.yaml`{{execute}}
 
 `kubectl get services`{{execute}}

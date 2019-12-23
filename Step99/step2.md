@@ -6,6 +6,7 @@ step4, step5ではredisのスレイブを構成します．それぞれのステ
 
 #### redisマスター 
 
+- マニフェスト: _redis-master-deployment.yaml_
 - イメージ: _k8s.gcr.io/redis:e2e_
 - redisサーバ名: _redis-master_ 
 - redis port: _6379_
@@ -18,7 +19,7 @@ step4, step5ではredisのスレイブを構成します．それぞれのステ
 
 上記のコマンドでデプロイメントが立ち上がったので，確認します．
 
-`kubectl get dep`{{execute}}
+`kubectl get deployment`{{execute}}
 
 また，コンテナはpodとして立ち上がっているはずで，_kubectl_コマンドで確認できます．
 

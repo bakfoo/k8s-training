@@ -1,17 +1,26 @@
-With the data services started we can now deploy the web application. The pattern of deploying a web application is the same as the pods we've deployed before.
+redisクラスタとしてデーベースが構築できたので，次にゲストブックのwebアプリケーションをデプロイします．
 
-#### Launch Frontend
+#### フロントエンドを立ち上げる 
 
-The YAML defines a service called frontend that uses the image _gcr.io/google_samples/gb-frontend:v3_. The replication controller will ensure that three pods will always exist.
+- マニフェスト: _frontend-deployment.yaml_  
+- イメージ: _gcr.io/google-samples/gb-frontend:v4_
+
+以下のコマンドでフロントエンドをデプロイします．
 
 `kubectl create -f frontend-deployment.yaml`{{execute}}
 
-#### List controllers and pods
+#### デプロイメントとポッドの列挙
 
-`kubectl get rc`{{execute}}
+`kubectl get deployment`{{execute}}
 
 `kubectl get pods`{{execute}}
 
-#### PHP Code
+#### PHPコード
 
-The PHP code uses HTTP and JSON to communicate with Redis. When setting a value requests go to _redis-master_ while read data comes from the _redis-slave_ nodes.
+フロントエンドはHTML+Angular.js+PHPで書かれています．
+
+- _index.html_: web UI
+- _controller.js_: Angular.jsで書かれている
+- _guestbook.php_: redisに対してsetとgetをするだけのPHPハンドラー
+
+基本的にはHTML+Angular.jsのフォームリクエストをPHPが受取り，RedisにJSONとして読み書きをします．書くときは _redis-master_ に投げ，読むときは _redis-slave_ のノードから読みます．

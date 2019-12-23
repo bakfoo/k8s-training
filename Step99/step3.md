@@ -2,7 +2,8 @@ redisマスタの構成の2つ目，service，つまり，redisマスタのネ�
 
 #### Serviceを作る
 
-リプリケーションコントローラー名: _redis-master_
+マニフェスト: _redis-master-service.yaml_
+デプロイメント名: _redis-master_
 
 `kubectl create -f redis-master-service.yaml`{{execute}}
 

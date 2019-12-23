@@ -1,19 +1,25 @@
-With all controllers and services defined Kubernetes will start launching them as Pods. A pod can have different states depending on what's happening. For example, if the Docker Image is still being downloaded then the Pod will have a _pending_ state as it's not able to launch. Once ready the status will change to _running_.
+ここまでで，全てのデプロイメントとサービスがk8sのポッドとして立ち上がったはずです．
 
-#### View Pods Status
+もしかするとポッドよってはまだ立ち上がり途中で，_pending_ になっているかもしれません．ただ，正常なマニフェストならば，そのポッドもしばらく経つと _running_ になるはずです．
 
-You can view the status using the following command:
+#### ポッドの状態を見る 
+
+以下のコマンドを使えばpodの状態を確認することができます．
 
 `kubectl get pods`{{execute}}
 
-#### Find NodePort
+#### NodePortを見つける
 
-If you didn't assign a well-known NodePort then Kubernetes will assign an available port randomly. You can find the assigned NodePort using _kubectl_.
+もしもマニフェストにNodePortを設定していない場合は，30000台のランダムなポートがk8sが勝手に割り振ります．今回は _30080_ を指定しているはずです．
 
 `kubectl describe service frontend | grep NodePort`{{execute}}
 
-#### View UI
+#### ゲストブックのUIにアクセスする
 
-Once the Pod is in running state you will be able to view the UI via port 30080. Use the URL to view the page  https://[[HOST_SUBDOMAIN]]-30080-[[KATACODA_HOST]].environments.katacoda.com
+ポッドが全部立ち上がったら，30080ポートを経由してゲストブックのweb UIにアクセスできます．
 
-Under the covers the PHP service is discovering the Redis instances via DNS. You now have a working multi-tier application deployed on Kubernetes.
+Katacodaでは以下のURLでゲストブックのUIにアクセスできるはずです．
+
+https://[[HOST_SUBDOMAIN]]-30080-[[KATACODA_HOST]].environments.katacoda.com
+
+以上で，redisクラスタをデータベースにしたPHPの三層webアプリをk8s上に構築できました．
