@@ -7,7 +7,7 @@ step2, step3で示したように，デプロイメントとサービスによ�
 #### Redisスレイブのスタート 
 
 - マニフェスト: _redis-slave-deployment.yaml_
-- イメージは _gcr.io/google_samples/gb-redisslave:v1_を利用します．
+- イメージ: _gcr.io/google_samples/gb-redisslave:v1_
 - port: _6379_
 - スレイブのレプリカ数は2つです．
 - スレイブが立ち上がると _redis-master_ にDNSを経由して接続されます． 
